@@ -35,6 +35,10 @@ Add husky config to `package.json`
   },
 ```
 
+Note: at this point I had to `npm run lint:fix` because husky won't let me commit without fixing lint errors.
+
+4. Add sass
+
 
 ## Available Scripts
 
