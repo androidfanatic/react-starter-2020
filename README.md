@@ -10,7 +10,8 @@
 
 `npm i -D tslint prettier tslint-config-prettier tslint-plugin-prettier tslint-react`
 
-Add prettier configs to package.json
+Add prettier configs to `package.json`
+
 ```
   "prettier": {
     "printWidth": 120,
@@ -21,6 +22,18 @@ Add prettier configs to package.json
 ```
 
 Add `tslint.json` to the root folder of project
+
+3. Add husky
+
+Add husky config to `package.json`
+
+```
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+```
 
 
 ## Available Scripts
