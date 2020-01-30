@@ -23,13 +23,18 @@ Add prettier configs to `package.json`
 
 Add `tslint.json` to the root folder of project
 
-3. Add husky
+3. Add husky and commitlint
+
+Install husky and commitlint
+
+`npm i npm install -D @commitlint/{config-conventional,cli} husky`
 
 Add husky config to `package.json`
 
 ```
   "husky": {
     "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-commit": "npm run lint"
     }
   },
