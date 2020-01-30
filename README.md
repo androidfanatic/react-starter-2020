@@ -1,5 +1,22 @@
 # REACT-STARTER-2020
 
+[x] typescript
+[x] prettier
+[x] tslint
+[x] husky
+[x] commitlint
+[x] sass
+[x] react-router-dom
+[x] redux
+[x] redux-thunk
+[x] redux-logger
+
+[ ] storybook
+[ ] bootstrap?
+[ ] router example
+[ ] redux example - typicode
+[ ] test example
+
 ## How was this repo setup
 
 1. Create the project
