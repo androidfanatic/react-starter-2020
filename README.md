@@ -10,12 +10,12 @@
 [x] redux
 [x] redux-thunk
 [x] redux-logger
+[x] storybook
 
-[ ] storybook
-[ ] bootstrap?
 [ ] router example
 [ ] redux example - typicode
 [ ] test example
+[ ] bootstrap?
 
 ## How was this repo setup
 
@@ -78,6 +78,10 @@ We will also add redux-logger
 `npm i redux react-redux @types/react-redux redux-thunk redux-logger @types/redux-logger`
 
 Then add a directory store with index and rootReducer. Also wrap the `App.tsx` in redux `Provider`.
+
+7. Add storybook
+
+`npx -p @storybook/cli sb init`
 
 ## Available Scripts
 

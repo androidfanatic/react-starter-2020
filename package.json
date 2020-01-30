@@ -30,7 +30,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "tslint -p ./tsconfig.json",
-    "lint:fix": "tslint --fix -p ./tsconfig.json"
+    "lint:fix": "tslint --fix -p ./tsconfig.json",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -50,6 +52,11 @@
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
+    "@storybook/addon-actions": "^5.3.9",
+    "@storybook/addon-links": "^5.3.9",
+    "@storybook/addons": "^5.3.9",
+    "@storybook/preset-create-react-app": "^1.5.2",
+    "@storybook/react": "^5.3.9",
     "husky": "^4.2.1",
     "prettier": "^1.19.1",
     "tslint": "^6.0.0",
