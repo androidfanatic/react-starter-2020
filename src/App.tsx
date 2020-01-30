@@ -1,8 +1,8 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
-import Routes from './routes';
-import store from './store';
+import Routes from 'src/routes';
+import store from 'src/store';
 
 const App: React.FC = () => {
   return (

@@ -11,10 +11,11 @@
 [x] redux-thunk
 [x] redux-logger
 [x] storybook
+[x] router example
+[x] redux example - typicode
+[x] test example
 
-[ ] router example
-[ ] redux example - typicode
-[ ] test example
+[ ] vscode config
 [ ] bootstrap?
 
 ## How was this repo setup

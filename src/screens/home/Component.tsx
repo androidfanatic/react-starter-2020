@@ -1,6 +1,7 @@
 import React from 'react';
 
-import './Home.scss';
+import { Link } from 'react-router-dom';
+import './Component.scss';
 import logo from './logo.svg';
 
 const Home: React.FC = () => {
@@ -14,6 +15,7 @@ const Home: React.FC = () => {
         <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
           Learn React
         </a>
+        <Link to="/todos">Todos</Link>
       </header>
     </div>
   );
