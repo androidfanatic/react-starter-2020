@@ -44,6 +44,7 @@ Add `commitlint.config.js` to the root of project folder.
 
 Note: at this point I had to `npm run lint:fix` because husky won't let me commit without fixing lint errors.
 
+4. Add sass
 
 ## Available Scripts
 
