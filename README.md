@@ -46,6 +46,14 @@ Note: at this point I had to `npm run lint:fix` because husky won't let me commi
 
 4. Add sass
 
+`npm i node-sass`
+
+5. Add react-router-dom
+
+`npm i react-router-dom @types/react-router-dom`
+
+6. 
+
 ## Available Scripts
 
 In the project directory, you can run:
