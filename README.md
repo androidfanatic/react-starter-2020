@@ -29,7 +29,7 @@
 
 Add prettier configs to `package.json`
 
-```
+```json
   "prettier": {
     "printWidth": 120,
     "parser": "typescript",
@@ -48,7 +48,7 @@ Install husky and commitlint
 
 Add husky config to `package.json`
 
-```
+```json
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
