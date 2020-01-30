@@ -1,12 +1,16 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import Routes from './Routes';
+import Routes from './routes';
+import store from './store';
+import { Provider } from 'react-redux';
 
 const App: React.FC = () => {
   return (
-    <BrowserRouter>
-      <Routes />
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <Routes />
+      </BrowserRouter>
+    </Provider>
   );
 };
 

@@ -1,9 +1,9 @@
 import React from 'react';
 
-import './home.scss';
+import './Home.scss';
 import logo from './logo.svg';
 
-export default () => {
+const Home: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
@@ -18,3 +18,5 @@ export default () => {
     </div>
   );
 };
+
+export default Home;

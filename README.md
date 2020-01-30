@@ -54,7 +54,13 @@ Note: at this point I had to `npm run lint:fix` because husky won't let me commi
 
 And then add a file Routes.tsx and move your home component to a route
 
-6. 
+6. Add redux and redux-thunk
+
+We will also add redux-logger
+
+`npm i redux react-redux @types/react-redux redux-thunk redux-logger @types/redux-logger`
+
+Then add a directory store with index and rootReducer. Also wrap the `App.tsx` in redux `Provider`.
 
 ## Available Scripts
 

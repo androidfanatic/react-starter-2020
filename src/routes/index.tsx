@@ -1,8 +1,8 @@
 import React from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
-import Home from './screens/home';
+import Home from '../screens/home/Home';
 
-export default () => {
+const Routes: React.FC = () => {
   return (
     <Switch>
       <Route component={Home} path="/" exact />
@@ -10,3 +10,5 @@ export default () => {
     </Switch>
   );
 };
+
+export default Routes;
