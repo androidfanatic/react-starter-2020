@@ -52,6 +52,8 @@ Note: at this point I had to `npm run lint:fix` because husky won't let me commi
 
 `npm i react-router-dom @types/react-router-dom`
 
+And then add a file Routes.tsx and move your home component to a route
+
 6. 
 
 ## Available Scripts
