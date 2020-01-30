@@ -1,4 +1,27 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# REACT-STARTER-2020
+
+## How was this repo setup
+
+1. Create the project
+
+`npm init react-app react-starter-2020 --template typescript`
+
+2. Setup tslint and prettier
+
+`npm i -D tslint prettier tslint-config-prettier tslint-plugin-prettier tslint-react`
+
+Add prettier configs to package.json
+```
+  "prettier": {
+    "printWidth": 120,
+    "parser": "typescript",
+    "trailingComma": "es5",
+    "singleQuote": true
+  },
+```
+
+Add `tslint.json` to the root folder of project
+
 
 ## Available Scripts
 
