@@ -2,7 +2,7 @@ import React from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { getTodos } from 'src/store/todos/action';
-import './Component.scss';
+import './Todos.scss';
 
 type RootState = {
   todos: Todo[];

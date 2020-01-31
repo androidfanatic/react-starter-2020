@@ -3,7 +3,7 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import store from 'src/store';
-import Component from './Component';
+import Component from './Todos';
 
 test('renders component', () => {
   const { getByText } = render(

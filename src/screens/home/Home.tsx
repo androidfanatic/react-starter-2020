@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Link } from 'react-router-dom';
-import './Component.scss';
+import './Home.scss';
 import logo from './logo.svg';
 
 const Home: React.FC = () => {

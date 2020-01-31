@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import Component from './Component';
+import Component from './Home';
 
 test('renders learn react link', () => {
   const { getByText } = render(
