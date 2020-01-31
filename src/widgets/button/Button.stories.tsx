@@ -7,4 +7,4 @@ export default {
   component: Button,
 };
 
-export const Text = () => <Button label={'Hello World 123'} onClick={action('clicked')} />;
+export const Text = () => <Button label={'Hello World'} onClick={action('clicked')} />;
