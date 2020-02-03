@@ -8,14 +8,14 @@ const ButtonStyleGuide: React.FC = () => {
   return (
     <React.Fragment>
       <h4>Buttons</h4>
-      <div>
+      <div className="light-text">
         A button means an operation (or a series of operations). Clicking a button will trigger corresponding business
         logic.
       </div>
 
       <hr />
       <h6 className="font-bold">Basic Styling</h6>
-      <div>
+      <div className="light-text">
         Includes several predefined button styles, each serving its own semantic purpose, thrown in for more control.
       </div>
       <CodePreview
@@ -33,7 +33,7 @@ const ButtonStyleGuide: React.FC = () => {
 
       <hr />
       <h6 className="font-bold">Outline Buttons</h6>
-      <div>
+      <div className="light-text">
         In need of a button, but not the hefty background colors they bring? Replace the default modifier classes with
         the .btn-outline-* ones to remove all background images and colors on any button.
       </div>
@@ -58,7 +58,7 @@ const ButtonStyleGuide: React.FC = () => {
 
       <hr />
       <h6 className="font-bold">Sizes</h6>
-      <div>
+      <div className="light-text">
         In need of a button, but not the hefty background colors they bring? Replace the default modifier classes with
         the .btn-outline-* ones to remove all background images and colors on any button.
       </div>
@@ -81,7 +81,7 @@ const ButtonStyleGuide: React.FC = () => {
 
       <hr />
       <h6 className="font-bold">Full Width</h6>
-      <div>Create block level buttons - those that span the full width of a parent.</div>
+      <div className="light-text">Create block level buttons - those that span the full width of a parent.</div>
       <CodePreview
         elements={
           <React.Fragment>
@@ -97,7 +97,7 @@ const ButtonStyleGuide: React.FC = () => {
 
       <hr />
       <h6 className="font-bold">Active State</h6>
-      <div>
+      <div className="light-text">
         Buttons will appear pressed (with a darker background, darker border, and inset shadow) when active and also by
         adding <code>active</code> prop.
       </div>
@@ -118,7 +118,7 @@ const ButtonStyleGuide: React.FC = () => {
 
       <hr />
       <h6 className="font-bold">Disabled State</h6>
-      <div>
+      <div className="light-text">
         Make buttons appear disabled by adding <code>disabled</code> prop to any button element.
       </div>
       <CodePreview
@@ -150,8 +150,8 @@ const ButtonStyleGuide: React.FC = () => {
 
       <hr />
       <h6 className="font-bold">Rounded Corner</h6>
-      <div>
-        Make buttons appear disabled by adding <code>disabled</code> prop to any button element.
+      <div className="light-text">
+        Make buttons rounded by adding the utility class <code>rounded-pill</code> to the buttons.
       </div>
       <CodePreview
         elements={
@@ -169,7 +169,7 @@ const ButtonStyleGuide: React.FC = () => {
 
       <hr />
       <h6 className="font-bold">Icon Buttons</h6>
-      <div>Make icon buttons by add icons from fontawesome icon library.</div>
+      <div className="light-text">Make icon buttons by add icons from fontawesome icon library.</div>
       <CodePreview
         elements={
           <React.Fragment>
