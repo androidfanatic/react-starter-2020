@@ -1,3 +1,5 @@
+import { faChevronLeft, faChevronRight, faCog, faPencilAlt } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import Button from 'src/components/button/Button';
 import CodePreview from 'src/components/codepreview/CodePreview';
@@ -12,7 +14,7 @@ const ButtonStyleGuide: React.FC = () => {
       </div>
 
       <hr />
-      <h5>Basic Styling</h5>
+      <h6 className="font-bold">Basic Styling</h6>
       <div>
         Includes several predefined button styles, each serving its own semantic purpose, thrown in for more control.
       </div>
@@ -30,7 +32,7 @@ const ButtonStyleGuide: React.FC = () => {
       />
 
       <hr />
-      <h5>Outline Buttons</h5>
+      <h6 className="font-bold">Outline Buttons</h6>
       <div>
         In need of a button, but not the hefty background colors they bring? Replace the default modifier classes with
         the .btn-outline-* ones to remove all background images and colors on any button.
@@ -55,7 +57,7 @@ const ButtonStyleGuide: React.FC = () => {
       />
 
       <hr />
-      <h5>Sizes</h5>
+      <h6 className="font-bold">Sizes</h6>
       <div>
         In need of a button, but not the hefty background colors they bring? Replace the default modifier classes with
         the .btn-outline-* ones to remove all background images and colors on any button.
@@ -78,7 +80,7 @@ const ButtonStyleGuide: React.FC = () => {
       />
 
       <hr />
-      <h5>Full Width</h5>
+      <h6 className="font-bold">Full Width</h6>
       <div>Create block level buttons - those that span the full width of a parent.</div>
       <CodePreview
         elements={
@@ -94,23 +96,7 @@ const ButtonStyleGuide: React.FC = () => {
       />
 
       <hr />
-      <h5>Full Width</h5>
-      <div>Create block level buttons - those that span the full width of a parent.</div>
-      <CodePreview
-        elements={
-          <React.Fragment>
-            <Button block>Primary</Button>
-            <Button block variant="outline-primary">
-              Secondary
-            </Button>
-          </React.Fragment>
-        }
-        code={`<Button>Primary</Button>
-<Button block variant="outline-primary">Secondary</Button>`}
-      />
-
-      <hr />
-      <h5>Active State</h5>
+      <h6 className="font-bold">Active State</h6>
       <div>
         Buttons will appear pressed (with a darker background, darker border, and inset shadow) when active and also by
         adding <code>active</code> prop.
@@ -131,7 +117,7 @@ const ButtonStyleGuide: React.FC = () => {
       />
 
       <hr />
-      <h5>Disabled State</h5>
+      <h6 className="font-bold">Disabled State</h6>
       <div>
         Make buttons appear disabled by adding <code>disabled</code> prop to any button element.
       </div>
@@ -160,6 +146,51 @@ const ButtonStyleGuide: React.FC = () => {
 <Button disabled variant="outline-primary">Primary</Button>
 <Button disabled variant="outline-secondary">Secondary</Button>
 <Button disabled variant="outline-danger">Danger</Button>`}
+      />
+
+      <hr />
+      <h6 className="font-bold">Rounded Corner</h6>
+      <div>
+        Make buttons appear disabled by adding <code>disabled</code> prop to any button element.
+      </div>
+      <CodePreview
+        elements={
+          <React.Fragment>
+            <Button className="rounded-pill mr-2">Default</Button>
+            <Button variant="outline-primary" className="rounded-pill  mr-2">
+              Normal
+            </Button>
+          </React.Fragment>
+        }
+        code={`<Button className="rounded-pill">Default</Button>
+<Button variant="outline-primary" className="rounded-pill">Normal</Button>
+`}
+      />
+
+      <hr />
+      <h6 className="font-bold">Icon Buttons</h6>
+      <div>Make icon buttons by add icons from fontawesome icon library.</div>
+      <CodePreview
+        elements={
+          <React.Fragment>
+            <Button className="btn-icon mr-2">
+              <FontAwesomeIcon icon={faChevronLeft} />
+            </Button>
+            <Button className="mr-2">
+              <FontAwesomeIcon icon={faChevronRight} />
+            </Button>
+            <Button variant="outline-primary" className="mr-2">
+              <FontAwesomeIcon icon={faPencilAlt} />
+            </Button>
+            <Button variant="outline-primary" className="mr-2">
+              <FontAwesomeIcon icon={faCog} />
+            </Button>
+          </React.Fragment>
+        }
+        code={`<Button><FontAwesomeIcon icon={faChevronLeft} /></Button>
+<Button><FontAwesomeIcon icon={faChevronRight} /></Button>
+<Button variant="outline-primary"><FontAwesomeIcon icon={faPencilAlt} /></Button>
+<Button variant="outline-primary"><FontAwesomeIcon icon={faCog} /></Button>`}
       />
     </React.Fragment>
   );
