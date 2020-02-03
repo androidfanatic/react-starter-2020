@@ -1,5 +1,5 @@
 import React from 'react';
-import CLSButton from 'src/components/button/Button';
+import Button from 'src/components/button/Button';
 import CodePreview from 'src/components/codepreview/CodePreview';
 
 const ButtonStyleGuide: React.FC = () => {
@@ -19,14 +19,14 @@ const ButtonStyleGuide: React.FC = () => {
       <CodePreview
         elements={
           <React.Fragment>
-            <CLSButton className="mr-2">Default</CLSButton>
-            <CLSButton variant="light" className="mr-2">
+            <Button className="mr-2">Default</Button>
+            <Button variant="light" className="mr-2">
               Normal
-            </CLSButton>
+            </Button>
           </React.Fragment>
         }
-        code={`<CLSButton>Default</CLSButton>
-<CLSButton variant="light">Normal</CLSButton>`}
+        code={`<Button>Default</Button>
+<Button variant="light">Normal</Button>`}
       />
 
       <hr />
@@ -38,20 +38,20 @@ const ButtonStyleGuide: React.FC = () => {
       <CodePreview
         elements={
           <React.Fragment>
-            <CLSButton variant="outline-primary" className="mr-2">
+            <Button variant="outline-primary" className="mr-2">
               Primary
-            </CLSButton>
-            <CLSButton variant="outline-secondary" className="mr-2">
+            </Button>
+            <Button variant="outline-secondary" className="mr-2">
               Secondary
-            </CLSButton>
-            <CLSButton variant="outline-danger" className="mr-2">
+            </Button>
+            <Button variant="outline-danger" className="mr-2">
               Danger
-            </CLSButton>
+            </Button>
           </React.Fragment>
         }
-        code={`<CLSButton variant="outline-primary">Primary</CLSButton>
-<CLSButton variant="outline-secondary">Secondary</CLSButton>
-<CLSButton variant="outline-danger">Danger</CLSButton>`}
+        code={`<Button variant="outline-primary">Primary</Button>
+<Button variant="outline-secondary">Secondary</Button>
+<Button variant="outline-danger">Danger</Button>`}
       />
 
       <hr />
@@ -63,18 +63,18 @@ const ButtonStyleGuide: React.FC = () => {
       <CodePreview
         elements={
           <React.Fragment>
-            <CLSButton size="sm" className="mr-2">
+            <Button size="sm" className="mr-2">
               Small
-            </CLSButton>
-            <CLSButton className="mr-2">Normal</CLSButton>
-            <CLSButton size="lg" className="mr-2">
+            </Button>
+            <Button className="mr-2">Normal</Button>
+            <Button size="lg" className="mr-2">
               Large
-            </CLSButton>
+            </Button>
           </React.Fragment>
         }
-        code={`<CLSButton size="sm">Small</CLSButton>
-<CLSButton>Normal</CLSButton>
-<CLSButton size="lg">Large</CLSButton>`}
+        code={`<Button size="sm">Small</Button>
+<Button>Normal</Button>
+<Button size="lg">Large</Button>`}
       />
 
       <hr />
@@ -83,14 +83,83 @@ const ButtonStyleGuide: React.FC = () => {
       <CodePreview
         elements={
           <React.Fragment>
-            <CLSButton block>Primary</CLSButton>
-            <CLSButton block variant="outline-primary">
+            <Button block>Primary</Button>
+            <Button block variant="outline-primary">
               Secondary
-            </CLSButton>
+            </Button>
           </React.Fragment>
         }
-        code={`<CLSButton>Primary</CLSButton>
-<CLSButton block variant="outline-primary">Secondary</CLSButton>`}
+        code={`<Button>Primary</Button>
+<Button block variant="outline-primary">Secondary</Button>`}
+      />
+
+      <hr />
+      <h5>Full Width</h5>
+      <div>Create block level buttons - those that span the full width of a parent.</div>
+      <CodePreview
+        elements={
+          <React.Fragment>
+            <Button block>Primary</Button>
+            <Button block variant="outline-primary">
+              Secondary
+            </Button>
+          </React.Fragment>
+        }
+        code={`<Button>Primary</Button>
+<Button block variant="outline-primary">Secondary</Button>`}
+      />
+
+      <hr />
+      <h5>Active State</h5>
+      <div>
+        Buttons will appear pressed (with a darker background, darker border, and inset shadow) when active and also by
+        adding <code>active</code> prop.
+      </div>
+      <CodePreview
+        elements={
+          <React.Fragment>
+            <Button active className="mr-2">
+              Default
+            </Button>
+            <Button active variant="light">
+              Normal
+            </Button>
+          </React.Fragment>
+        }
+        code={`<Button active>Default</Button>
+<Button active variant="light">Normal</Button>`}
+      />
+
+      <hr />
+      <h5>Disabled State</h5>
+      <div>
+        Make buttons appear disabled by adding <code>disabled</code> prop to any button element.
+      </div>
+      <CodePreview
+        elements={
+          <React.Fragment>
+            <Button disabled className="mr-2">
+              Default
+            </Button>
+            <Button disabled variant="light" className="mr-2">
+              Normal
+            </Button>
+            <Button disabled variant="outline-primary" className="mr-2">
+              Primary
+            </Button>
+            <Button disabled variant="outline-secondary" className="mr-2">
+              Secondary
+            </Button>
+            <Button disabled variant="outline-danger" className="mr-2">
+              Danger
+            </Button>
+          </React.Fragment>
+        }
+        code={`<Button disabled>Default</Button>
+<Button disabled variant="light">Normal</Button>
+<Button disabled variant="outline-primary">Primary</Button>
+<Button disabled variant="outline-secondary">Secondary</Button>
+<Button disabled variant="outline-danger">Danger</Button>`}
       />
     </React.Fragment>
   );
