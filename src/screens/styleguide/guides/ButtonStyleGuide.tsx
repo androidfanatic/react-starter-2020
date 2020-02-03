@@ -19,12 +19,14 @@ const ButtonStyleGuide: React.FC = () => {
       <CodePreview
         elements={
           <React.Fragment>
-            <CLSButton className="mr8">Default</CLSButton>
-            <CLSButton variant="light">Normal</CLSButton>
+            <CLSButton className="mr-2">Default</CLSButton>
+            <CLSButton variant="light" className="mr-2">
+              Normal
+            </CLSButton>
           </React.Fragment>
         }
         code={`<CLSButton>Default</CLSButton>
-  <CLSButton variant="light">Normal</CLSButton>`}
+<CLSButton variant="light">Normal</CLSButton>`}
       />
 
       <hr />
@@ -36,20 +38,20 @@ const ButtonStyleGuide: React.FC = () => {
       <CodePreview
         elements={
           <React.Fragment>
-            <CLSButton variant="outline-primary" className="mr8">
+            <CLSButton variant="outline-primary" className="mr-2">
               Primary
             </CLSButton>
-            <CLSButton variant="outline-secondary" className="mr8">
+            <CLSButton variant="outline-secondary" className="mr-2">
               Secondary
             </CLSButton>
-            <CLSButton variant="outline-danger" className="mr8">
+            <CLSButton variant="outline-danger" className="mr-2">
               Danger
             </CLSButton>
           </React.Fragment>
         }
         code={`<CLSButton variant="outline-primary">Primary</CLSButton>
-  <CLSButton variant="outline-secondary">Secondary</CLSButton>
-  <CLSButton variant="outline-danger">Danger</CLSButton>`}
+<CLSButton variant="outline-secondary">Secondary</CLSButton>
+<CLSButton variant="outline-danger">Danger</CLSButton>`}
       />
 
       <hr />
@@ -61,18 +63,18 @@ const ButtonStyleGuide: React.FC = () => {
       <CodePreview
         elements={
           <React.Fragment>
-            <CLSButton size="sm" className="mr8">
+            <CLSButton size="sm" className="mr-2">
               Small
             </CLSButton>
-            <CLSButton className="mr8">Normal</CLSButton>
-            <CLSButton size="lg" className="mr8">
+            <CLSButton className="mr-2">Normal</CLSButton>
+            <CLSButton size="lg" className="mr-2">
               Large
             </CLSButton>
           </React.Fragment>
         }
         code={`<CLSButton size="sm">Small</CLSButton>
-  <CLSButton>Normal</CLSButton>
-  <CLSButton size="lg">Large</CLSButton>`}
+<CLSButton>Normal</CLSButton>
+<CLSButton size="lg">Large</CLSButton>`}
       />
 
       <hr />
@@ -81,10 +83,8 @@ const ButtonStyleGuide: React.FC = () => {
       <CodePreview
         elements={
           <React.Fragment>
-            <CLSButton block className="mr8">
-              Primary
-            </CLSButton>
-            <CLSButton block variant="outline-primary" className="mr8">
+            <CLSButton block>Primary</CLSButton>
+            <CLSButton block variant="outline-primary">
               Secondary
             </CLSButton>
           </React.Fragment>

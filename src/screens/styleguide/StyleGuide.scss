@@ -5,19 +5,15 @@ header {
   color: #ffffff;
 }
 
-.flex {
-  display: flex;
-}
-
 header .brand,
 header .version {
-  width: 122px;
+  width: 122px !important;
   display: inline-block;
-  text-align: center;
 }
 
 header .brandImage {
   max-height: 38px;
+  display: inline-block;
 }
 
 header .headerText {
@@ -83,8 +79,4 @@ hr {
   font-size: 12px;
   background-color: #ffffff;
   padding: 4px;
-}
-
-.mr8 {
-  margin-right: 8px;
 }

@@ -9,12 +9,12 @@ const StyleGuide: React.FC = () => {
   return (
     <React.Fragment>
       <header className="flex">
-        <span className="brand">
+        <span className="brand text-center">
           <img className="brandImage" src="/assets/images/logo.png" alt="Customer Lobby" />
         </span>
         <span className="headerText">STYLE GUIDE</span>
         <span className="spacer" />
-        <span className="version">Version 1</span>
+        <span className="version text-center">Version 1</span>
       </header>
       <main>
         <Container fluid>
