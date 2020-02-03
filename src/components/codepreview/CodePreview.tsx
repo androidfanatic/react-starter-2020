@@ -1,5 +1,6 @@
-import React from 'react';
-import { Button, Card } from 'react-bootstrap';
+import React, { useRef, useState } from 'react';
+import { Button, Card, Overlay, Tooltip } from 'react-bootstrap';
+import CopyToClipboard from 'react-copy-to-clipboard';
 
 export interface CodePreviewProps {
   label?: string;
@@ -8,15 +9,29 @@ export interface CodePreviewProps {
 }
 
 const CodePreview: React.FC<CodePreviewProps> = props => {
+  const [tooltipVisible, setTooltipVisible] = useState(false);
+  const setTooltipVisibleTemporarily = (visible: boolean) => {
+    setTooltipVisible(visible);
+    setTimeout(() => setTooltipVisible(false), 1000);
+  };
+  const target = useRef(null);
+
   return (
     <Card className="code-preview">
       <div className="code-preview-label">{props.label}</div>
       <div className="code-preview-elements">{props.elements}</div>
       {props.code !== '' ? (
         <code className="code-preview-code">
-          <Button size="sm" variant="light" className="copy-button">
-            Copy
-          </Button>
+          <CopyToClipboard onCopy={() => setTooltipVisibleTemporarily(true)} text={props.code ?? ''}>
+            <Button ref={target} size="sm" variant="link" className="copy-button">
+              Copy
+            </Button>
+          </CopyToClipboard>
+          <Overlay target={target.current ?? undefined} show={tooltipVisible} placement="right">
+            <Tooltip id="overlay-example" {...props}>
+              Copied
+            </Tooltip>
+          </Overlay>
           <pre>{props.code}</pre>
         </code>
       ) : null}
