@@ -1,0 +1,90 @@
+header {
+  height: 66px;
+  align-items: center;
+  background-color: #37485b;
+  color: #ffffff;
+}
+
+.flex {
+  display: flex;
+}
+
+header .brand,
+header .version {
+  width: 122px;
+  display: inline-block;
+  text-align: center;
+}
+
+header .brandImage {
+  max-height: 38px;
+}
+
+header .headerText {
+  font-size: 16px;
+}
+
+header .version {
+  font-size: 11px;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+header .spacer {
+  flex-grow: 1;
+}
+
+.sidebar {
+  background-color: #f7fafb;
+  min-height: calc(100vh - 66px);
+}
+
+.content {
+  width: 80% !important;
+  margin: 32px auto;
+}
+
+hr {
+  margin-top: 32px !important;
+  margin-bottom: 32px !important;
+}
+
+.code-preview {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.code-preview-elements {
+  padding: 24px;
+}
+
+.code-preview-code {
+  padding: 24px;
+  background-color: #dddddd;
+  position: relative;
+}
+
+.code-preview-code pre {
+  margin: 0 !important;
+}
+
+.code-preview-code .copy-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.code-preview-label {
+  text-transform: uppercase;
+  position: absolute;
+  left: 8px;
+  top: -13px;
+  font-size: 12px;
+  background-color: #ffffff;
+  padding: 4px;
+}
+
+.mr8 {
+  margin-right: 8px;
+}

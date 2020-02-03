@@ -1,0 +1,22 @@
+@import "./var.scss";
+
+$primary: #f47821 !default;
+$light: #dddddd !default;
+$font-size-base: 14;
+@import "~bootstrap/scss/bootstrap.scss";
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+// fonts
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+* {
+  font-family: "Lato", sans-serif !important;
+}
