@@ -35,7 +35,7 @@ header .spacer {
   min-height: calc(100vh - 66px);
 }
 
-.sidebar a {
+.sidebar a:not(:focus) {
   @extend .light-text;
 }
 
