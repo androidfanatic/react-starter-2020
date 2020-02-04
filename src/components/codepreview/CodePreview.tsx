@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { Button, Card, Overlay, Tooltip } from 'react-bootstrap';
 import CopyToClipboard from 'react-copy-to-clipboard';
+import './CodePreview.scss';
 
 export interface CodePreviewProps {
   label?: string;
