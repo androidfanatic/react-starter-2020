@@ -53,11 +53,9 @@ const StyleGuide: React.FC = () => {
               ))}
             </Col>
             <Col md={10}>
-              {/** button content */}
               <Container className="content">
                 <StyleGuideRoutes />
               </Container>
-              {/** end: button content */}
             </Col>
           </Row>
         </Container>
