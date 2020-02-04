@@ -12,13 +12,13 @@ export interface AccordionTogglePropType {
 
 export const AccordionToggle: React.FC<AccordionTogglePropType> = ({ children, eventKey }) => {
   const [expanded, setExpanded] = useState(true);
-  const decoratedOnClick = useAccordionToggle(eventKey, () => setExpanded(!expanded));
+  const toggleAccordion = useAccordionToggle(eventKey, () => setExpanded(!expanded));
 
   return (
-    <div className="my-1 flex items-center cursor-pointer" onClick={decoratedOnClick}>
-      <h6 className="flex-grow font-bold">{children}</h6>
+    <h6 className="py-2 flex items-center cursor-pointer" onClick={toggleAccordion}>
+      <span className="flex-grow font-bold">{children}</span>
       <FontAwesomeIcon size="xs" icon={expanded ? faChevronUp : faChevronDown} />
-    </div>
+    </h6>
   );
 };
 
