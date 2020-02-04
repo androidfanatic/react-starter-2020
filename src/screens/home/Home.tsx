@@ -1,6 +1,4 @@
 import React from 'react';
-
-import { Link } from 'react-router-dom';
 import './Home.scss';
 import logo from './logo.svg';
 
@@ -15,7 +13,6 @@ const Home: React.FC = () => {
         <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
           Learn React
         </a>
-        <Link to="/todos">Todos</Link>
       </header>
     </div>
   );
