@@ -3,6 +3,12 @@
 $primary: #f47821 !default;
 $light: #ededed !default;
 $font-size-base: 14;
+$h1-font-size: 26;
+$h2-font-size: 22;
+$h3-font-size: 18;
+$h4-font-size: 15;
+$h5-font-size: 14;
+$h6-font-size: 12;
 @import "~bootstrap/scss/bootstrap.scss";
 
 body {

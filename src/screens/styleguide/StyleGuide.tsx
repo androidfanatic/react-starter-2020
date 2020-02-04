@@ -1,9 +1,10 @@
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Accordion, Button, Col, Container, ListGroup, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import ComponentsCatalogue from './ComponentsCatalogue';
 import './StyleGuide.scss';
-import StyleGuideRoutes from './StyleGuideRoutes';
+import StyleGuideRoutes, { ComponentsCatalogue } from './StyleGuideRoutes';
 
 const StyleGuide: React.FC = () => {
   return (
@@ -19,18 +20,21 @@ const StyleGuide: React.FC = () => {
       <main>
         <Container fluid>
           <Row>
-            <Col className="sidebar" md={2}>
+            <Col className="sidebar pt-4" md={2}>
               {ComponentsCatalogue.map(component => (
                 <Accordion key={component.id} defaultActiveKey="0">
-                  <Accordion.Toggle as={Button} variant="link" size="sm" eventKey="0">
+                  <Accordion.Toggle as={Button} className="text-left" block variant="light" size="sm" eventKey="0">
                     {component.label}
+                    <FontAwesomeIcon className="float-right" size="xs" icon={faChevronDown} />
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="0">
                     <ListGroup variant="flush">
                       {component.links.map(link => (
-                        <ListGroup.Item key={link.id}>
-                          <Link to={link.to}>{link.label}</Link>
-                        </ListGroup.Item>
+                        <Link key={link.id} to={link.to}>
+                          <Button className="text-left" block variant="light" size="sm">
+                            {link.label}
+                          </Button>
+                        </Link>
                       ))}
                     </ListGroup>
                   </Accordion.Collapse>

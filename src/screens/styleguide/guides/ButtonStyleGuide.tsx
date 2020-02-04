@@ -13,7 +13,7 @@ const ButtonStyleGuide: React.FC = () => {
         logic.
       </div>
 
-      <hr />
+      <hr className="thick" />
       <h6 className="font-bold">Basic Styling</h6>
       <div className="light-text">
         Includes several predefined button styles, each serving its own semantic purpose, thrown in for more control.
@@ -31,7 +31,7 @@ const ButtonStyleGuide: React.FC = () => {
 <Button variant="light">Normal</Button>`}
       />
 
-      <hr />
+      <hr className="thick" />
       <h6 className="font-bold">Outline Buttons</h6>
       <div className="light-text">
         In need of a button, but not the hefty background colors they bring? Replace the default modifier classes with
@@ -56,7 +56,7 @@ const ButtonStyleGuide: React.FC = () => {
 <Button variant="outline-danger">Danger</Button>`}
       />
 
-      <hr />
+      <hr className="thick" />
       <h6 className="font-bold">Sizes</h6>
       <div className="light-text">
         In need of a button, but not the hefty background colors they bring? Replace the default modifier classes with
@@ -79,7 +79,7 @@ const ButtonStyleGuide: React.FC = () => {
 <Button size="lg">Large</Button>`}
       />
 
-      <hr />
+      <hr className="thick" />
       <h6 className="font-bold">Full Width</h6>
       <div className="light-text">Create block level buttons - those that span the full width of a parent.</div>
       <CodePreview
@@ -95,7 +95,7 @@ const ButtonStyleGuide: React.FC = () => {
 <Button block variant="outline-primary">Secondary</Button>`}
       />
 
-      <hr />
+      <hr className="thick" />
       <h6 className="font-bold">Active State</h6>
       <div className="light-text">
         Buttons will appear pressed (with a darker background, darker border, and inset shadow) when active and also by
@@ -116,7 +116,7 @@ const ButtonStyleGuide: React.FC = () => {
 <Button active variant="light">Normal</Button>`}
       />
 
-      <hr />
+      <hr className="thick" />
       <h6 className="font-bold">Disabled State</h6>
       <div className="light-text">
         Make buttons appear disabled by adding <code>disabled</code> prop to any button element.
@@ -148,7 +148,7 @@ const ButtonStyleGuide: React.FC = () => {
 <Button disabled variant="outline-danger">Danger</Button>`}
       />
 
-      <hr />
+      <hr className="thick" />
       <h6 className="font-bold">Rounded Corner</h6>
       <div className="light-text">
         Make buttons rounded by adding the utility class <code>rounded-pill</code> to the buttons.
@@ -167,7 +167,7 @@ const ButtonStyleGuide: React.FC = () => {
 `}
       />
 
-      <hr />
+      <hr className="thick" />
       <h6 className="font-bold">Icon Buttons</h6>
       <div className="light-text">Make icon buttons by add icons from fontawesome icon library.</div>
       <CodePreview
