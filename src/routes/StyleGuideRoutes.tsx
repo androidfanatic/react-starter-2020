@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Redirect, Route, Switch } from 'react-router-dom';
 import ButtonStyleGuide from 'src/screens/styleguide/guides/ButtonStyleGuide';
 import TypographyStyleGuide from 'src/screens/styleguide/guides/TypographyStyleguide';
 
@@ -27,6 +27,7 @@ const StyleGuideRoutes: React.FC = () => {
         .map(link => (
           <Route key={link.id} exact path={link.to} component={link.component} />
         ))}
+      <Route render={() => <Redirect to="/styleguide" />} />
     </Switch>
   );
 };
