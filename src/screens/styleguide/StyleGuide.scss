@@ -35,6 +35,10 @@ header .spacer {
   min-height: calc(100vh - 66px);
 }
 
+.sidebar a {
+  @extend .light-text;
+}
+
 .content {
   width: 80% !important;
   margin: 32px auto;

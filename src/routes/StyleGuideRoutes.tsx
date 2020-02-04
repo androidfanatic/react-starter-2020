@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import ButtonStyleGuide from './guides/ButtonStyleGuide';
-import TypographyStyleGuide from './guides/TypographyStyleguide';
+import ButtonStyleGuide from 'src/screens/styleguide/guides/ButtonStyleGuide';
+import TypographyStyleGuide from 'src/screens/styleguide/guides/TypographyStyleguide';
 
 export const ComponentsCatalogue = [
   {
@@ -12,7 +12,10 @@ export const ComponentsCatalogue = [
   {
     id: 0,
     label: 'Components',
-    links: [{ id: 0, label: 'Button', to: '/styleguide/buttons', component: ButtonStyleGuide }],
+    links: [
+      { id: 0, label: 'Button', to: '/styleguide/buttons', component: ButtonStyleGuide },
+      { id: 1, label: 'Button', to: '/styleguide/buttons', component: ButtonStyleGuide },
+    ],
   },
 ];
 
