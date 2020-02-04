@@ -1,10 +1,26 @@
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
-import { Accordion, Button, Col, Container, ListGroup, Row } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Accordion, Button, Col, Container, ListGroup, Row, useAccordionToggle } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './StyleGuide.scss';
 import StyleGuideRoutes, { ComponentsCatalogue } from './StyleGuideRoutes';
+
+export interface AccordionTogglePropType {
+  eventKey: string;
+}
+
+export const AccordionToggle: React.FC<AccordionTogglePropType> = ({ children, eventKey }) => {
+  const [expanded, setExpanded] = useState(true);
+  const decoratedOnClick = useAccordionToggle(eventKey, () => setExpanded(!expanded));
+
+  return (
+    <div className="my-2 flex items-center cursor-pointer" onClick={decoratedOnClick}>
+      <span className="flex-grow font-bold">{children}</span>
+      <FontAwesomeIcon size="xs" icon={expanded ? faChevronUp : faChevronDown} />
+    </div>
+  );
+};
 
 const StyleGuide: React.FC = () => {
   return (
@@ -23,10 +39,7 @@ const StyleGuide: React.FC = () => {
             <Col className="sidebar pt-4" md={2}>
               {ComponentsCatalogue.map(component => (
                 <Accordion key={component.id} defaultActiveKey="0">
-                  <Accordion.Toggle as={Button} className="text-left" block variant="light" size="sm" eventKey="0">
-                    {component.label}
-                    <FontAwesomeIcon className="float-right" size="xs" icon={faChevronDown} />
-                  </Accordion.Toggle>
+                  <AccordionToggle eventKey="0">{component.label}</AccordionToggle>
                   <Accordion.Collapse eventKey="0">
                     <ListGroup variant="flush">
                       {component.links.map(link => (
