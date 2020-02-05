@@ -15,6 +15,7 @@
 [x] redux example - typicode
 [x] test example
 
+[ ] tailwind
 [ ] vscode config
 [ ] bootstrap?
 
