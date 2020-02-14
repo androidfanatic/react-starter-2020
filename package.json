@@ -52,7 +52,9 @@
     "eject": "react-scripts eject",
     "lint": "tslint -p ./tsconfig.json",
     "lint:fix": "tslint --fix -p ./tsconfig.json",
-    "build:style": "tailwind build src/styles/index.css -o src/styles/tailwind.css"
+    "build:style": "tailwind build src/styles/index.css -o src/styles/tailwind.css",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -80,5 +82,12 @@
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-commit": "npm run lint"
     }
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^5.3.13",
+    "@storybook/addon-links": "^5.3.13",
+    "@storybook/addons": "^5.3.13",
+    "@storybook/preset-create-react-app": "^1.5.2",
+    "@storybook/react": "^5.3.13"
   }
 }

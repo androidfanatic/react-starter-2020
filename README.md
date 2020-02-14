@@ -100,6 +100,8 @@ Then add a directory store with index and rootReducer. Also wrap the `App.tsx` i
 
 `npx -p @storybook/cli sb init`
 
+8. TODO: add how tailwind was added to the repo
+
 ## Available Scripts
 
 In the project directory, you can run:
