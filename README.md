@@ -1,23 +1,38 @@
 # REACT-STARTER-2020
 
-[x] typescript
-[x] prettier
-[x] tslint
-[x] husky
-[x] commitlint
-[x] sass
-[x] react-router-dom
-[x] redux
-[x] redux-thunk
-[x] redux-logger
-[x] storybook
-[x] router example
-[x] redux example - typicode
-[x] test example
+- [x] typescript
 
-[ ] tailwind
-[ ] vscode config
-[ ] bootstrap?
+- [x] prettier
+
+- [x] tslint
+
+- [x] husky
+
+- [x] commitlint
+
+- [x] sass
+
+- [x] react-router-dom
+
+-  [x] redux
+
+- [x] redux-thunk
+
+- [x] redux-logger
+
+- [x] storybook
+
+- [x] router example
+
+- [x] redux example - typicode
+
+- [x] test example
+
+- [x] tailwind
+
+- [ ] vscode config
+
+- [ ] bootstrap?
 
 ## How was this repo setup
 
