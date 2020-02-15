@@ -32,7 +32,7 @@
 
 - [ ] vscode config
 
-- [ ] bootstrap?
+- [x] bootstrap?
 
 ## How was this repo setup
 
