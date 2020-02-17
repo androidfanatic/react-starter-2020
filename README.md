@@ -30,7 +30,7 @@
 
 - [x] tailwind
 
-- [ ] vscode config
+- [x] vscode config
 
 - [x] bootstrap?
 
